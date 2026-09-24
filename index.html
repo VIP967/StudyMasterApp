@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Study Master iOS</title>
+  <style>
+    :root { --bg-primary: #f2f2f7; --bg-card: rgba(255, 255, 255, 0.85); --text-main: #1c1c1e; --text-sub: #8e8e93; --accent: #007aff; --accent-gradient: linear-gradient(135deg, #007aff, #5856d6); --radius: 20px; }
+    [data-theme="dark"] { --bg-primary: #000000; --bg-card: rgba(28, 28, 30, 0.85); --text-main: #ffffff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Cairo", sans-serif; }
+    body { background-color: var(--bg-primary); color: var(--text-main); display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .app-frame { width: 100%; max-width: 430px; height: 100vh; background: var(--bg-primary); position: relative; display: flex; flex-direction: column; overflow: hidden; }
+    .app-header { padding: 40px 20px 15px; background: var(--bg-card); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(60,60,67,0.12); }
+    .app-body { flex: 1; overflow-y: auto; padding: 15px 15px 90px; }
+    .card { background: var(--bg-card); border-radius: var(--radius); padding: 18px; margin-bottom: 15px; border: 1px solid rgba(60,60,67,0.12); }
+    .btn { width: 100%; padding: 12px; border: none; border-radius: 12px; background: var(--accent-gradient); color: white; font-size: 1rem; font-weight: bold; cursor: pointer; }
+    .tab-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 75px; background: var(--bg-card); backdrop-filter: blur(25px); border-top: 1px solid rgba(60,60,67,0.12); display: flex; justify-content: space-around; align-items: center; }
+  </style>
+</head>
+<body>
+<div class="app-frame">
+  <div class="app-header">
+    <h2 id="u-name">أهلاً بك يا مهندس يوسف</h2>
+    <p style="font-size:0.8rem; color:var(--text-sub);">تطبيق مُثابر بلس الأكاديمي - iOS Edition</p>
+  </div>
+  <div class="app-body">
+    <div class="card">
+      <h3>📊 نسبة الإنجاز العام</h3>
+      <h1 style="color:var(--accent); margin:10px 0;">100%</h1>
+      <p style="font-size:0.85rem; color:var(--text-sub);">التطبيق تم بناؤه بنجاح وتجهيزه كـ APK مستقل.</p>
+    </div>
+    <div class="card">
+      <h3>👨‍💻 تطوير النظام</h3>
+      <p style="font-size:0.85rem; margin-top:5px;">تطوير: المهندس يوسف سلطان الحاج<br>خبير البرمجيات والأمن السيبراني والذكاء الاصطناعي.</p>
+    </div>
+  </div>
+  <div class="tab-bar">
+    <span style="color:var(--accent); font-weight:bold;">الرئيسية</span>
+    <span style="color:var(--text-sub);">المواد</span>
+    <span style="color:var(--text-sub);">الجدول</span>
+    <span style="color:var(--text-sub);">المؤقت</span>
+  </div>
+</div>
+</body>
+</html>
